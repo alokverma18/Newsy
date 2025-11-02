@@ -32,9 +32,8 @@ public class NewsScheduler {
 
     /**
      * Optional: Run on application startup (for testing)
-     * Uncomment the @Scheduled annotation to enable
      */
-     @Scheduled(initialDelay = 10000, fixedDelay = Long.MAX_VALUE)
+//    @Scheduled(initialDelay = 10000, fixedDelay = Long.MAX_VALUE)
     public void fetchNewsOnStartup() {
         log.info("=== Fetching news on application startup ===");
         try {
