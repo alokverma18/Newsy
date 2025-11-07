@@ -9,6 +9,9 @@ A modern news aggregator with Spring Boot backend and Angular frontend that fetc
 - Dark/light theme with responsive design
 - REST API endpoints for news retrieval
 
+## 📸 Snapshot
+![](snapshot.png)
+
 ## 🛠️ Tech Stack
 
 **Backend:** Java 21, Spring Boot 3.5.7, MongoDB Atlas, Maven  
