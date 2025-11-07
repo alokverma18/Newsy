@@ -9,43 +9,43 @@
 
 :root,
 body.light-theme {
-  /* Light Theme Colors */
-  --bg-primary: #f5f7fa;
+  /* Light Theme Colors - Natural, muted palette */
+  --bg-primary: #fafbfc;
   --bg-secondary: #ffffff;
-  --bg-tertiary: #e8ecf1;
-  --text-primary: #1a202c;
-  --text-secondary: #4a5568;
-  --text-tertiary: #718096;
-  --border-color: #e2e8f0;
-  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
-  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
-  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
-  --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.15);
-  --accent-primary: #3182ce;
-  --accent-secondary: #805ad5;
-  --success: #48bb78;
-  --error: #f56565;
-  --warning: #ed8936;
+  --bg-tertiary: #f3f4f6;
+  --text-primary: #1f2937;
+  --text-secondary: #6b7280;
+  --text-tertiary: #9ca3af;
+  --border-color: #e5e7eb;
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.07);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.08);
+  --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.10);
+  --accent-primary: #ff6400;
+  --accent-secondary: #e55a00;
+  --success: #059669;
+  --error: #dc2626;
+  --warning: #ff6400;
 }
 
 body.dark-theme {
-  /* Dark Theme Colors */
-  --bg-primary: #0f1419;
-  --bg-secondary: #1a1f2e;
-  --bg-tertiary: #2d3748;
-  --text-primary: #f7fafc;
-  --text-secondary: #e2e8f0;
-  --text-tertiary: #a0aec0;
-  --border-color: #2d3748;
-  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
-  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.4);
-  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.5);
-  --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.6);
-  --accent-primary: #4299e1;
-  --accent-secondary: #9f7aea;
-  --success: #68d391;
-  --error: #fc8181;
-  --warning: #f6ad55;
+  /* Dark Theme Colors - Softer, less harsh */
+  --bg-primary: #111827;
+  --bg-secondary: #1f2937;
+  --bg-tertiary: #374151;
+  --text-primary: #f9fafb;
+  --text-secondary: #d1d5db;
+  --text-tertiary: #9ca3af;
+  --border-color: #374151;
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.6);
+  --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.7);
+  --accent-primary: #ff7a1f;
+  --accent-secondary: #ff6400;
+  --success: #10b981;
+  --error: #ef4444;
+  --warning: #ff6400;
 }
 
 * {
