@@ -15,7 +15,7 @@ import {MatDialogModule, MatDialogRef} from "@angular/material/dialog";
 })
 export class SubscriptionComponent implements OnInit {
   form!: FormGroup;
-  categories = ['general','technology','sports','business','entertainment','science'];
+  categories = ['sports','technology','business','entertainment','education'];
   message = '';
   submitting = false;
 

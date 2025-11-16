@@ -38,7 +38,7 @@ public class NewsController {
             List<News> newsList = newsService.getNewsByCategory(formattedCategory);
             List<NewsDTO> newsDTO = newsList.stream()
                     .map(NewsDTO::fromEntity)
-                    .collect(Collectors.toList());
+                    .toList();
 
             if (newsDTO.isEmpty()) {
                 return ResponseEntity.ok(Map.of(
@@ -81,11 +81,9 @@ public class NewsController {
 
             // Ensure each category has max 4 articles
             Map<String, List<NewsDTO>> limitedGroupedNews = new LinkedHashMap<>();
-            groupedNews.forEach((category, articles) -> {
-                limitedGroupedNews.put(category, articles.stream()
-                        .limit(4)
-                        .collect(Collectors.toList()));
-            });
+            groupedNews.forEach((category, articles) -> limitedGroupedNews.put(category, articles.stream()
+                    .limit(4)
+                    .collect(Collectors.toList())));
 
             return ResponseEntity.ok(Map.of(
                 "totalCategories", limitedGroupedNews.size(),

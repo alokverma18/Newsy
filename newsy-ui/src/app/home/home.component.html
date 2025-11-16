@@ -6,14 +6,13 @@
         <h1>{{ title }}</h1>
       </div>
 
-
       <div class="header-actions">
         <button class="btn btn-refresh btn-icon-only" (click)="refreshNews()" [disabled]="loading">
           <i-lucide [img]="RefreshCw" class="icon"></i-lucide>
         </button>
 
         <button class="btn btn-subscribe btn-icon-only" (click)="openSubscriptionModal()">
-          <i-lucide [img]="Newspaper" class="icon"></i-lucide>
+          <i-lucide [img]="Bell" class="icon"></i-lucide>
         </button>
 
         <button class="btn btn-theme btn-icon-only" (click)="toggleTheme()">

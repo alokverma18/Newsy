@@ -19,7 +19,7 @@ public class NewsScheduler {
      * Scheduled job to fetch news daily at 8:00 AM
      * Cron expression: 0 0 8 * * ? (sec min hour day month weekday)
      */
-    @Scheduled(cron = "${news.fetch.cron}")
+    @Scheduled(cron = "${news.fetch.cron}", zone = "${app.timezone:UTC}")
     public void fetchDailyNews() {
         log.info("=== Starting Daily News Fetch Job ===");
         try {

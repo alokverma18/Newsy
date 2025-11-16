@@ -1,5 +1,4 @@
 import { Routes } from '@angular/router';
-import {SubscriptionComponent} from "./subscription/subscription.component";
 import {HomeComponent} from "./home/home.component";
 import {SubscribedComponent} from "./subscribed/subscribed.component";
 import {UnsubscribedComponent} from "./unsubscribed/unsubscribed.component";

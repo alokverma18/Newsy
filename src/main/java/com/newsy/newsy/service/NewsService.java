@@ -226,7 +226,7 @@ public class NewsService {
     public List<News> getNewsByCategory(String category) {
         log.info("Fetching news for category: {}", category);
         // Use fetchedAt sorting to ensure we show articles from the latest fetch
-        List<News> articles = newsRepository.findTop5ByCategoryOrderByFetchedAtDescPublishedAtDesc(category);
+        List<News> articles = newsRepository.findTop5ByCategoryIgnoreCaseOrderByFetchedAtDescPublishedAtDesc(category);
 
         // Limit to 5 articles (in case the @Query doesn't limit properly)
         return articles.stream().limit(5).collect(Collectors.toList());
@@ -254,7 +254,7 @@ public class NewsService {
     }
 
     public List<News> fetchTopArticles(String cat, int i) {
-        return newsRepository.findTop5ByCategoryOrderByFetchedAtDescPublishedAtDesc(cat)
+        return newsRepository.findTop5ByCategoryIgnoreCase(cat)
                 .stream()
                 .limit(i)
                 .collect(Collectors.toList());

@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { NewsService } from '../services/news.service';
 import { ThemeService } from '../services/theme.service';
 import { NewsArticle, NewsResponse } from '../models/news.model';
-import { LucideAngularModule, Newspaper, RefreshCw, Sun, Moon, Cpu, Trophy, Briefcase, Layers, AlertCircle, Inbox, ArrowRight, GraduationCap, Sparkles } from 'lucide-angular';
+import { LucideAngularModule, Bell, Newspaper, RefreshCw, Sun, Moon, Cpu, Trophy, Briefcase, Layers, AlertCircle, Inbox, ArrowRight, GraduationCap, Sparkles } from 'lucide-angular';
 import {MatDialog, MatDialogModule} from "@angular/material/dialog";
 import {SubscriptionComponent} from "../subscription/subscription.component";
 
@@ -16,6 +16,7 @@ import {SubscriptionComponent} from "../subscription/subscription.component";
 })
 export class HomeComponent implements OnInit {
   // Lucide icons
+  readonly Bell = Bell;
   readonly Newspaper = Newspaper;
   readonly RefreshCw = RefreshCw;
   readonly Sun = Sun;

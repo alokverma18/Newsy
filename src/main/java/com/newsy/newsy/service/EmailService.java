@@ -3,6 +3,7 @@ package com.newsy.newsy.service;
 import jakarta.mail.internet.MimeMessage;
 import jakarta.mail.MessagingException;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
@@ -13,6 +14,7 @@ import org.thymeleaf.spring6.SpringTemplateEngine;
 import java.io.UnsupportedEncodingException;
 import java.util.Locale;
 
+@Slf4j
 @Service
 @RequiredArgsConstructor
 public class EmailService {
@@ -41,6 +43,7 @@ public class EmailService {
     }
 
     public void sendNewsletter(String to, String subject, Object articles, String token) throws MessagingException {
+        log.info("Sending newsletter email to {}", to);
         Context ctx = new Context(Locale.ENGLISH);
         ctx.setVariable("title", subject);
         ctx.setVariable("articles", articles);
